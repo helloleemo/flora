@@ -1,0 +1,54 @@
+/* globals.css — reset, design tokens, base typography */
+
+:root {
+  /* Core palette */
+  --ivory: #e9e5dc;
+  --sage: #a6bbae;
+  --dusty-rose: #c29a9f;
+  --terracotta: #b7795f;
+  --deep-teal: #345963;
+  --cream: #f3efe7;
+
+  --font-serif: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --font-zh: "Noto Serif TC", "Cormorant Garamond", serif;
+
+  --ink: var(--deep-teal);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--ivory);
+}
+
+body {
+  font-family: var(--font-serif);
+  color: var(--ink);
+  background: var(--ivory);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img,
+svg {
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
